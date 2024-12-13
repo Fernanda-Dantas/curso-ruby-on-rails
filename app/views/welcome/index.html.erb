@@ -1,16 +1,10 @@
 <h1> Seja bem-vindo! </h1>
 
-<p> 
-Sem esquecer do Hello world!
-
-    Fernanda D.
-
-</p>
-
-<p> A soma é: <%= 1 + 3 %>  </p>
-<p> Meu nome de trás para frente é: <%= "Fernanda".reverse %>  </p>
-
-<% ax = "minha var a".reverse   %>
-
-<p> Imprimindo minha variável a: <%= ax %>  </p>
-<p> A data de hoje é: <%= Date.today %>  </p>
+<ul>
+    <li>
+        <a href="/coins">Cadastrar Moedas</a>
+    </li>
+    <li>
+        <%= link_to 'Cadastrar Moedas', coins_path %>
+    </li>
+</ul>
