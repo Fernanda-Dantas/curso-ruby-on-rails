@@ -12,7 +12,7 @@ class CoinsTest < ApplicationSystemTestCase
 
   test "should create coin" do
     visit coins_url
-    click_on "New coin"
+    click_on "Nova moeda"
 
     fill_in "Acronym", with: @coin.acronym
     fill_in "Description", with: @coin.description
@@ -20,7 +20,7 @@ class CoinsTest < ApplicationSystemTestCase
     click_on "Create Coin"
 
     assert_text "Coin was successfully created"
-    click_on "Back"
+    click_on "Voltar"
   end
 
   test "should update Coin" do
@@ -33,13 +33,13 @@ class CoinsTest < ApplicationSystemTestCase
     click_on "Update Coin"
 
     assert_text "Coin was successfully updated"
-    click_on "Back"
+    click_on "Voltar"
   end
 
   test "should destroy Coin" do
     visit coin_url(@coin)
-    click_on "Destroy this coin", match: :first
+    click_on "Apagar moeda", match: :first
 
-    assert_text "Coin was successfully destroyed"
+    assert_text "Moeda apagada com sucesso"
   end
 end
