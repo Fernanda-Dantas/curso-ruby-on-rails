@@ -5,8 +5,8 @@ namespace :dev do
       show_spinner("Apagando Banco de Dados...") {%x(rails db:drop)}
       show_spinner("Criando Banco de Dados...") {%x(rails db:create)}
       show_spinner("Migrando Banco de Dados...") { %x(rails db:migrate)}
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Você não está em ambiente de desenvolvimento!"
     end
@@ -19,17 +19,32 @@ namespace :dev do
                   {
                       description: "Bitcoin",
                       acronym: "BTC",
-                      url_image: "https://e7.pngegg.com/pngimages/548/763/png-clipart-bitcoin-bitcoin-thumbnail.png"
+                      url_image: "https://e7.pngegg.com/pngimages/548/763/png-clipart-bitcoin-bitcoin-thumbnail.png",
+                      mining_type: MiningType.find_by(acronym: 'PoW')
                   },
                   {
                       description: "Ethereum",
                       acronym: "ETH",
-                      url_image: "https://png.pngtree.com/png-vector/20210427/ourmid/pngtree-ethereum-cryptocurrency-coin-icon-png-image_3246438.jpg"
+                      url_image: "https://png.pngtree.com/png-vector/20210427/ourmid/pngtree-ethereum-cryptocurrency-coin-icon-png-image_3246438.jpg",
+                      mining_type: MiningType.all.sample
                   },
                   {
                       description: "Dash",
                       acronym: "DASH",
-                      url_image: "https://w7.pngwing.com/pngs/37/123/png-transparent-dash-bitcoin-cryptocurrency-digital-currency-logo-bitcoin-blue-angle-text.png"
+                      url_image: "https://w7.pngwing.com/pngs/37/123/png-transparent-dash-bitcoin-cryptocurrency-digital-currency-logo-bitcoin-blue-angle-text.png",
+                      mining_type: MiningType.all.sample
+                  },
+                  {
+                      description: "Iota",
+                      acronym: "IOT",
+                      url_image: "https://w7.pngwing.com/pngs/486/784/png-transparent-iota-cryptocurrency-wallet-cryptocurrency-wallet-bitfinex-coin-design-emblem-label-exchange.png",
+                      mining_type: MiningType.all.sample
+                  },
+                  {
+                      description: "ZCash",
+                      acronym: "ZEC",
+                      url_image: "https://w7.pngwing.com/pngs/401/234/png-transparent-zcash-crypto-zcash-symbol-zcash-coin-zcash-sign-zcash-logo-zcash-3d-icon-thumbnail.png",
+                      mining_type: MiningType.all.sample
                   }
         ]
 
