@@ -30,6 +30,7 @@
 en:
   actual_locale: "English-US"
   hello: "Hello world"
+  welcome: "Welcome!"
   links:
       edit: "Edit"
       show: "Show"
