@@ -1,11 +1,11 @@
 <div id="<%= dom_id mining_type %>">
   <p>
-    <strong>Description:</strong>
+    <strong><%= MiningType.human_attribute_name(:description) %></strong>
     <%= mining_type.description %>
   </p>
 
   <p>
-    <strong>Acronym:</strong>
+    <strong><%= MiningType.human_attribute_name(:acronym) %></strong>
     <%= mining_type.acronym %>
   </p>
 
