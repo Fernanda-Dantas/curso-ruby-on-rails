@@ -1,17 +1,16 @@
-<div id="<%= dom_id coin %>">
-  <p>
-    <strong><%= Coin.human_attribute_name(:description) %></strong>
-    <%= coin.description %>
-  </p>
-
-  <p>
-    <strong><%= Coin.human_attribute_name(:acronym) %></strong>
-    <%= coin.acronym %>
-  </p>
-
-  <p>
-    <strong><%= Coin.human_attribute_name(:url_image) %></strong>
-    <%= image_tag coin.url_image, width:25, height:25 %>
-  </p>
-
-</div>
+<table class="table table-hover" border="1" cellpadding="10" cellspacing="0">
+<thead>
+  <tr>
+    <th><strong><%= Coin.human_attribute_name(:description) %></strong></th>
+    <th><strong><%= Coin.human_attribute_name(:acronym) %></strong></th>
+    <th> <strong><%= Coin.human_attribute_name(:url_image) %></strong></th>
+  </tr>
+</thead>
+<tbody>
+  <tr id="<%= dom_id coin %>">
+    <td><%= coin.description %></td>
+    <td><%= coin.acronym %></td>
+    <td><%= image_tag coin.url_image, width:25, height:25 %></td>
+  </tr>
+</tbody>
+</table>

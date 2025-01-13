@@ -5,8 +5,5 @@
   "repository": "https://github.com/Fernanda-Dantas/curso-ruby-on-rails.git",
   "author": "Fernanda",
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^3.7.1",
-    "notify-js-legacy": "^0.4.1"
-  }
+  "dependencies": {}
 }

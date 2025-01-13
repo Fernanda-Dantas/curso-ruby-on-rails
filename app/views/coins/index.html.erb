@@ -1,16 +1,14 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Moedas</h1>
-<h2><%= cookies[:curso] %></h2>
-
-<div id="coins">
+<p class="text-success"><%= notice %></p>
+<h1 class="display-4">Moedas</h1>
+<h2 class="text-muted"><%= cookies[:curso] %></h2>
+<div id="coins" class="row">
   <% @coins.each do |coin| %>
-    <%= render coin %>
-    <p>
-      <%= link_to t('links.show'), coin %>
-    </p>
+    <div class="col-md-4">
+      <%= render coin %>
+      <p>
+        <%= link_to t('links.show'), coin, class: "btn btn-primary btn-sm" %>
+      </p>
+    </div>
   <% end %>
 </div>
-
-
-<%= link_to "Nova moeda", new_coin_path %>
+<%= link_to "Nova moeda", new_coin_path, class: "btn btn-success" %>

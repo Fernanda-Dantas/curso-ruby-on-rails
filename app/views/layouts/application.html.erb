@@ -9,9 +9,13 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "scaffolds", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "bootstrap.min", media: "all", "data-turbo-track": "reload" %>
 
-    <%= javascript_importmap_tags 'application' %>
-    <%= javascript_importmap_tags params[:controller] %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'jquery', 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag 'notify', 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag "bootstrap.bundle.min" %>
+    <%= javascript_include_tag params[:controller] %>
     <%= javascript_include_tag params[:controller], "data-turbo-track": "reload" %>
   </head>
 
@@ -21,10 +25,7 @@
     <%= yield %>
     <h1>RODAPÉ</h1>
 
-    <script>
-      $(document).ready(function() {
-        $.notify("Access granted", "success");
-      });</script>
+    <script>$.notify("Access granted", "success");</script>
 
   </body>
 </html>
