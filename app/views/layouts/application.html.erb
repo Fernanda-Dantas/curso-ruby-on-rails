@@ -12,8 +12,6 @@
 
     <%= javascript_importmap_tags 'application' %>
     <%= javascript_importmap_tags params[:controller] %>
-    <%= javascript_include_tag 'jquery', "data-turbo-track": "reload" %>
-    <%= javascript_include_tag 'notify', "data-turbo-track": "reload" %>
     <%= javascript_include_tag params[:controller], "data-turbo-track": "reload" %>
   </head>
 

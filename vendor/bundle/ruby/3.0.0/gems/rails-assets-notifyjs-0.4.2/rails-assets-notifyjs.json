@@ -1,0 +1,32 @@
+{
+  "name": "rails-assets-notifyjs",
+  "downloads": null,
+  "version": "0.4.2",
+  "version_downloads": null,
+  "platform": "ruby",
+  "authors": "rails-assets.org",
+  "info": "A simple, versatile notification library",
+  
+  "licenses": "MIT",
+  
+  "metadata": {
+
+  },
+  "sha": null,
+  "project_uri": "http://notifyjs.com/",
+  "gem_uri": null,
+  "homepage_uri": "http://notifyjs.com/",
+  "wiki_uri": null,
+  "documentation_uri": null,
+  "mailing_list_uri": null,
+  "source_code_uri": "http://notifyjs.com/",
+  "bug_tracker_uri": null,
+  "dependencies": {
+    "development": [
+    
+    ],
+    "runtime": [
+
+    ]
+  }
+}
