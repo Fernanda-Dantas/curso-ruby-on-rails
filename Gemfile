@@ -47,8 +47,6 @@ gem "bootsnap", require: false
 gem 'pry-rails'
 gem 'tty-spinner'
 gem 'rails-i18n', '~> 7.0.0'
-gem 'rails-assets-jquery', source: 'https://rails-assets.org'
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

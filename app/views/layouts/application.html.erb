@@ -21,7 +21,10 @@
     <%= yield %>
     <h1>RODAPÉ</h1>
 
-    <script>$.notify("Access granted", "success");</script>
+    <script>
+      $(document).ready(function() {
+        $.notify("Access granted", "success");
+      });</script>
 
   </body>
 </html>
