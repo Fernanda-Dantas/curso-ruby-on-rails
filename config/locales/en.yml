@@ -28,9 +28,14 @@
 #       enabled: "ON"
 
 en:
-  actual_locale: "English-US"
+  current_locale: "English-US"
   hello: "Hello world"
   welcome: "Welcome!"
+  coin_button: "Coins"
+  minning_type_btn: "Minning Type"
+  messages:
+    welcome: "This is CryptoWallet, an app for you to register and track your cryptocurrencies."
+    menu: "To get started, select one of the options below:"
   links:
       edit: "Edit"
       show: "Show"

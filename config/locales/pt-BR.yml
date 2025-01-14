@@ -1,7 +1,12 @@
 pt-BR: 
-  actual_locale: "Português do Brasil"
+  current_locale: "Português do Brasil"
   hello: "Olá, mundo!"
   welcome: "Seja bem-vindo!"
+  coin_button: "Moedas"
+  minning_type_btn: "Tipos de Mineração"
+  messages:
+    welcome: "Este é o CryptoWallet, uma app para você cadastrar e acompanhar as suas criptomoedas."
+    menu: "Para começar selecione uma das opções abaixo:"
   links:
       edit: "Editar"
       show: "Mostrar"
