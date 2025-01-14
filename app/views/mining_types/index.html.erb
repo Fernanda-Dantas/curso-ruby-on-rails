@@ -1,14 +1,21 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Mining types</h1>
+<h1> <%= t('minning_type_btn') %></h1>
 
 <div id="mining_types">
-  <% @mining_types.each do |mining_type| %>
-    <%= render mining_type %>
-    <p>
-      <%= link_to t('links.show'), mining_type %>
-    </p>
-  <% end %>
+<table class="table" border="1" cellpadding="10" cellspacing="0">
+  <thead>
+      <tr>
+        <th><strong><%= MiningType.human_attribute_name(:description) %></strong></th>
+        <th><strong><%= MiningType.human_attribute_name(:acronym) %></strong></th>
+      </tr>
+    </thead>
+    <% @mining_types.each do |mining_type| %>
+      <%= render mining_type %>
+      <p>
+        <%= link_to t('links.show'), mining_type, class:"btn btn-primary" %>
+      </p>
+    <% end %>
+</table>
 </div>
 
-<%= link_to "New mining type", new_mining_type_path %>
+<%= link_to t('links.new'), new_mining_type_path, class:"btn btn-success" %>

@@ -1,6 +1,5 @@
 <p class="text-success"><%= notice %></p>
-<h1 class="display-4">Moedas</h1>
-<h2 class="text-muted"><%= cookies[:curso] %></h2>
+<h1 class="display-4"><%= t('coin_button') %></h1>
 <div id="coins" class="row">
   <% @coins.each do |coin| %>
     <div class="col-md-4">
@@ -11,4 +10,4 @@
     </div>
   <% end %>
 </div>
-<%= link_to "Nova moeda", new_coin_path, class: "btn btn-success" %>
+<%= link_to t('links.new'), new_coin_path, class:"btn btn-success" %>

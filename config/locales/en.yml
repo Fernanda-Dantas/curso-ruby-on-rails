@@ -36,9 +36,11 @@ en:
   messages:
     welcome: "This is CryptoWallet, an app for you to register and track your cryptocurrencies."
     menu: "To get started, select one of the options below:"
+    confirm: "Are you sure?"
   links:
-      edit: "Edit"
-      show: "Show"
-      delete: "Delete"
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    new: "New"
 
 
