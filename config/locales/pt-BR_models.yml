@@ -11,7 +11,7 @@
       coin:
         id: Código de Identificação
         description: Descrição
-        acronym: Silga
+        acronym: Sigla
         url_image: URL da Imagem
         mining_type: Tipo de Mineração
         mining_type_id: Tipo de Mineração
@@ -20,7 +20,7 @@
       mining_type:
         id: Código de Identificação
         description: Descrição
-        acronym: Silga
+        acronym: Sigla
         updated_at: Atualizado em
         created_at: Criado em
 
