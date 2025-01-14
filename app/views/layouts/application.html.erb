@@ -7,7 +7,6 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "scaffolds", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "bootstrap.min", media: "all", "data-turbo-track": "reload" %>
 
@@ -20,12 +19,16 @@
   </head>
 
   <body>
-  <h1>Tela - <%= params[:controller] %></h1>
-  <h1>CABEÇALHO</h1>
-    <%= yield %>
-    <h1>RODAPÉ</h1>
-
-    <script>$.notify("Access granted", "success");</script>
-
+    <div class="container-fluid">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <%= link_to "Português", root_path(locale: 'pt-BR'), class:"nav-link"  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "English", root_path(locale: 'en'), class:"nav-link"  %>
+          </li>
+        </ul>
+      <%= yield %>
+    </div>
   </body>
 </html>

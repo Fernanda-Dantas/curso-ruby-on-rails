@@ -1,25 +1,9 @@
-<p>
-    <%= link_to "Português", root_path(locale: 'pt-BR')  %>
-</p>
-<p>
-    <%= link_to "English", root_path(locale: 'en')  %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4">Seja Bem-Vindo!</h1>
+  <p class="lead">Este é o CryptoWallet, uma app para você cadastrar e acompanhar as suas criptomoedas.</p>
+  <hr class="my-4">
+  <p>Para começar selecione uma das opções abaixo:</p>
+  <%= render "menu" %>
+</div>
 
 
-<h1><%= t('welcome') %> </h1>
-<p>O idioma utilizado nessa aplicação é: <strong> <%= t('actual_locale') =%></p> </strong>
-<p> Data: <%= l(Date.today) %> </p>
-<p><%= t('hello') %></p>
-
-<%= render "menu" %>
-
-<p> 
-Você está em um ambiente de <%= ambiente_rails =%>
-</p>
-
-<p> Olá! Eu sou uma variável de instância: <%= @meu_nome %> 
-</p>
-
-<p>
-Meu curso é o <%= @curso %>
-</p>
