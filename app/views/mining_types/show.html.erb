@@ -3,8 +3,8 @@
 <%= render @mining_type %>
 
 <div>
-  <%= link_to t('links.edit'), edit_mining_type_path(@mining_type) %>
-  <%= link_to "Back to mining types", mining_types_path %>
+  <%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class:"btn btn-primary mt-2" %>
+  <%= link_to t('links.back'), mining_types_path, class:"btn btn-primary mt-2" %>
 
-  <%= button_to t('links.delete'), @mining_type, method: :delete, data: {confirm: t('msg.confirm')} %>
+  <%= button_to t('links.delete'), @mining_type, method: :delete, data: {confirm: t('msg.confirm')}, class:"btn btn-danger mt-2" %>
 </div>
