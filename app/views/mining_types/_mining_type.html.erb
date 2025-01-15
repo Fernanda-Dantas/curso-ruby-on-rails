@@ -1,8 +1,15 @@
-<table class="table table-hover" border="1" cellpadding="10" cellspacing="0">
-  <tbody>
-    <tr id="<%= dom_id mining_type %>">
-      <td><%= mining_type.description %></td>
-      <td><%= mining_type.acronym %></td>
-    </tr>
-  </tbody>
-</table>
+<form>
+
+  <div class="form-group">
+    <%= label_tag nil, mining_type.class.human_attribute_name(:description) %>
+    <%= text_field_tag nil, mining_type.description, class:"form-control", disabled: true %>
+  </div>
+
+  <div class="form-group">
+    <%= label_tag nil, mining_type.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, mining_type.acronym, class:"form-control", disabled: true %>
+  </div>
+  
+</form>
+
+
